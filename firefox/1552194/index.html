@@ -22,8 +22,13 @@
 				return file + "?_=" + Date.now();
 			}
 			
-			function changeFile(elem) {
-				file = elem.value;
+			function changeFile(param) {
+				if (param.value) {
+					file = param.value;
+				} else {
+					$('#filename').value = param;
+					file = param;
+				}
 				// alert(file);
 			}
 		</script>
