@@ -71,7 +71,7 @@
 		Please follow the test steps in order in Firefox. On your first visit you can skip step 1 and 2. But if you repeat the test you must first reset the cache an reload the page.<br />
 		<br />
 		Current audio test file or url: <br />
-		<input type="text" name="filename" id="filename" onchange="changeFile(this);">
+		<input size="50" type="text" name="filename" id="filename" onchange="changeFile(this);">
 		<button onclick="changeFile($(#filename).val());">change audio file</button>
 		<div style="font-size:12px;">To reset, just reload the page.</div><br />
 		<h3>Example presets:</h3>
@@ -81,8 +81,8 @@
 			<li><a onclick="changeFile('bird.m4a')">bird.m4a (MP4)</a></li>
 			<li><a onclick="changeFile('gen1-1.m4a')">gen1-1.m4a (3GPP)</a></li>
 			<li><a onclick="changeFile('gen12-1.m4a')">gen12-1.m4a (MP4)</a></li>
-			<li><a onclick="changeFile('https://media.xenos.org/teachings/gen1-1.m4a')">gen1-1.m4a (URL)</a></li>
-			<li><a onclick="changeFile('https://media.xenos.org/teachings/gen12-1.m4a')">gen12-1.m4a (URL)</a></li>
+			<li><a onclick="changeFile('https://media.xenos.org/teachings/gen1-1.m4a')">gen1-1.m4a (3GPP URL)</a></li>
+			<li><a onclick="changeFile('https://media.xenos.org/teachings/gen12-1.m4a')">gen12-1.m4a (MP4 URL)</a></li>
 		</ul>
 		<h2>Tests with browser cache</h1>
 		<table>
